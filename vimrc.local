@@ -1,0 +1,12 @@
+" Color scheme
+set t_Co=256
+
+set encoding=utf-8
+set scrolloff=10 " Show n number of lines below cursor when scrolling
+set cursorline " Indicate the current line
+set hlsearch " Highlight search terms
+set mouse=a
+
+" NerdTree
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
